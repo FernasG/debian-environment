@@ -1,0 +1,7 @@
+services:
+  debian-environment:
+    build: .
+    container_name: debian-environment
+    image: debian-environment:latest
+    volumes:
+      - ${PWD}:/app
